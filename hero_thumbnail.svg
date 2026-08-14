@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <!-- Background Base -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0e0a12" />
+      <stop offset="50%" stop-color="#08070a" />
+      <stop offset="100%" stop-color="#0a0514" />
+    </linearGradient>
+
+    <!-- Orange Radial Glow -->
+    <radialGradient id="orangeGlow" cx="20%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#ff6600" stop-opacity="0.7" />
+      <stop offset="40%" stop-color="#d94b00" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#ff5500" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Purple/Blue Radial Glow -->
+    <radialGradient id="purpleGlow" cx="80%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#6a0dad" stop-opacity="0.85" />
+      <stop offset="45%" stop-color="#3b0080" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#1f004d" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Center Rim Light -->
+    <radialGradient id="centerLight" cx="50%" cy="40%" r="35%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- AI Icon Glow -->
+    <filter id="orangeNeon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- PR Icon Glow -->
+    <filter id="purpleNeon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="16" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- AI Tile Gradient -->
+    <linearGradient id="aiTile" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a1f18" />
+      <stop offset="50%" stop-color="#18110c" />
+      <stop offset="100%" stop-color="#0f0a07" />
+    </linearGradient>
+
+    <linearGradient id="aiBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9900" />
+      <stop offset="100%" stop-color="#ff4400" />
+    </linearGradient>
+
+    <linearGradient id="aiTextGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffb700" />
+      <stop offset="100%" stop-color="#ff5500" />
+    </linearGradient>
+
+    <!-- PR Tile Gradient -->
+    <linearGradient id="prTile" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a1830" />
+      <stop offset="50%" stop-color="#100d21" />
+      <stop offset="100%" stop-color="#080614" />
+    </linearGradient>
+
+    <linearGradient id="prBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8a5cff" />
+      <stop offset="100%" stop-color="#3b1bff" />
+    </linearGradient>
+
+    <linearGradient id="prTextGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c4a3ff" />
+      <stop offset="100%" stop-color="#7a42ff" />
+    </linearGradient>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1280" height="720" fill="url(#bgGrad)" />
+  <rect width="1280" height="720" fill="url(#orangeGlow)" />
+  <rect width="1280" height="720" fill="url(#purpleGlow)" />
+  <rect width="1280" height="720" fill="url(#centerLight)" />
+
+  <!-- CENTER CREATOR SILHOUETTE & HANDS -->
+  <g id="creator-group">
+    <!-- Body / Shoulders -->
+    <path d="M 410 720 C 420 540, 480 480, 640 480 C 800 480, 860 540, 870 720 Z" fill="#0d0c12" />
+    <!-- Orange Rim Light on left shoulder -->
+    <path d="M 410 720 C 420 540, 480 480, 540 480" fill="none" stroke="#ff6600" stroke-width="6" opacity="0.8" filter="url(#orangeNeon)" />
+    <!-- Purple Rim Light on right shoulder -->
+    <path d="M 740 480 C 800 480, 860 540, 870 720" fill="none" stroke="#8a5cff" stroke-width="6" opacity="0.8" filter="url(#purpleNeon)" />
+
+    <!-- Head & Hair -->
+    <path d="M 550 310 C 550 200, 730 200, 730 310 C 730 420, 550 420, 550 310 Z" fill="#241b17" />
+    <!-- Hair Volume -->
+    <path d="M 535 280 C 530 180, 745 180, 745 280 C 720 160, 560 160, 535 280 Z" fill="#140f11" />
+    
+    <!-- Face Tones -->
+    <path d="M 565 260 C 565 200, 715 200, 715 260 C 715 390, 565 390, 565 260 Z" fill="#a87554" />
+    <!-- Orange light on left face side -->
+    <path d="M 565 230 C 560 290, 570 360, 600 380" fill="none" stroke="#ff7700" stroke-width="12" opacity="0.45" />
+    <!-- Purple light on right face side -->
+    <path d="M 715 230 C 720 290, 710 360, 680 380" fill="none" stroke="#9955ff" stroke-width="12" opacity="0.45" />
+
+    <!-- Eyes, Nose, Beard details -->
+    <ellipse cx="610" cy="275" rx="12" ry="7" fill="#22150c" />
+    <ellipse cx="670" cy="275" rx="12" ry="7" fill="#22150c" />
+    <path d="M 640 270 L 643 310 L 635 315" fill="none" stroke="#6e462d" stroke-width="3" stroke-linecap="round" />
+    <path d="M 610 335 Q 640 355 670 335" fill="none" stroke="#422514" stroke-width="4" stroke-linecap="round" />
+    <!-- Beard -->
+    <path d="M 575 300 Q 640 400 705 300 C 690 385, 590 385, 575 300 Z" fill="#1e1510" opacity="0.7" />
+
+    <!-- Left Hand Holding AI Icon -->
+    <path d="M 380 360 C 360 380, 370 470, 420 490 C 410 440, 400 390, 380 360 Z" fill="#8c5d41" />
+    <path d="M 380 360 C 360 380, 370 470, 420 490" fill="none" stroke="#ff7700" stroke-width="5" opacity="0.7" />
+
+    <!-- Right Hand Holding PR Icon -->
+    <path d="M 900 360 C 920 380, 910 470, 860 490 C 870 440, 880 390, 900 360 Z" fill="#8c5d41" />
+    <path d="M 900 360 C 920 380, 910 470, 860 490" fill="none" stroke="#8a5cff" stroke-width="5" opacity="0.7" />
+  </g>
+
+  <!-- LEFT 3D AI ICON TILE -->
+  <g id="ai-icon-tile" filter="url(#orangeNeon)">
+    <!-- Outer Glow Rim -->
+    <rect x="75" y="195" width="350" height="350" rx="64" fill="none" stroke="url(#aiBorder)" stroke-width="8" />
+    <!-- Tile Body -->
+    <rect x="80" y="200" width="340" height="340" rx="60" fill="url(#aiTile)" stroke="#3a281c" stroke-width="2" />
+    <!-- Inner Bevel -->
+    <rect x="95" y="215" width="310" height="310" rx="48" fill="none" stroke="#ff7700" stroke-width="2" opacity="0.5" />
+
+    <!-- 3D "Ai" Bold Text -->
+    <!-- 3D Shadow/Extrusion -->
+    <text x="253" y="423" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="900" font-size="185" fill="#802b00" text-anchor="middle">Ai</text>
+    <text x="251" y="421" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="900" font-size="185" fill="#cc4400" text-anchor="middle">Ai</text>
+    <!-- Front Text -->
+    <text x="247" y="417" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="900" font-size="185" fill="url(#aiTextGrad)" text-anchor="middle">Ai</text>
+  </g>
+
+  <!-- RIGHT 3D PR ICON TILE -->
+  <g id="pr-icon-tile" filter="url(#purpleNeon)">
+    <!-- Outer Glow Rim -->
+    <rect x="855" y="195" width="350" height="350" rx="64" fill="none" stroke="url(#prBorder)" stroke-width="8" />
+    <!-- Tile Body -->
+    <rect x="860" y="200" width="340" height="340" rx="60" fill="url(#prTile)" stroke="#2d2254" stroke-width="2" />
+    <!-- Inner Bevel -->
+    <rect x="875" y="215" width="310" height="310" rx="48" fill="none" stroke="#8a5cff" stroke-width="2" opacity="0.5" />
+
+    <!-- 3D "Pr" Bold Text -->
+    <!-- 3D Shadow/Extrusion -->
+    <text x="1033" y="423" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="900" font-size="185" fill="#240066" text-anchor="middle">Pr</text>
+    <text x="1031" y="421" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="900" font-size="185" fill="#4d1aff" text-anchor="middle">Pr</text>
+    <!-- Front Text -->
+    <text x="1027" y="417" font-family="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" font-weight="900" font-size="185" fill="url(#prTextGrad)" text-anchor="middle">Pr</text>
+  </g>
+
+  <!-- Vignette Overlay -->
+  <rect width="1280" height="720" fill="none" stroke="#000000" stroke-width="20" opacity="0.4" />
+</svg>
